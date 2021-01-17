@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+<GridPane alignment="center" hgap="10" prefHeight="800.0" prefWidth="800.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+      <Label prefHeight="30.0" prefWidth="550.0" text="PENDATAAN KARYAWAN TETAP SANDBOX" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+
+
+      <VBox prefHeight="47.0" prefWidth="552.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+
+            <Label text="Nama" />
+            <TextField fx:id="tfNama" focusTraversable="false" promptText="Masukan Nama" />
+         </VBox>
+
+      <Button fx:id="btnsubmit" onAction="#onButtonClicked" text="Submit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+      <TableView fx:id="tvDataKaryawan" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+
+
+        <columns>
+          <TableColumn prefWidth="71.0" text="Nama" />
+
+
+          <TableColumn prefWidth="102.0" text="Alamat" />
+            <TableColumn prefWidth="118.0" text="Posisi" />
+            <TableColumn prefWidth="82.0" text="Umur" />
+            <TableColumn  prefWidth="150.0" text="Jenis Kelamin" />
+        </columns>
+     
+      </TableView>
+
+
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <Button fx:id="btnsave" onAction="#onButtonClicked" text="Save" textAlignment="CENTER" />
+
+            <Button fx:id="btnload" onAction="#onButtonClicked" text="Load" textAlignment="CENTER" />
+
+      </HBox>
+
+
+      <VBox prefHeight="51.0" prefWidth="552.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+
+            <Label text="Alamat" />
+            <TextField fx:id="tfAlamat" focusTraversable="false" promptText="Masukan Alamat" />
+      </VBox>
+
+
+      <VBox prefHeight="46.0" prefWidth="552.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Label text="Posisi" />
+            <TextField fx:id="tfPosisi" focusTraversable="false" promptText="Masukan Posisi" />
+      </VBox>
+
+
+      <VBox prefHeight="48.0" prefWidth="552.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <Label text="Umur" />
+            <TextField fx:id="tfUmur" focusTraversable="false" promptText="Masukan Umur" />
+      </VBox>
+
+
+      <VBox prefHeight="53.0" prefWidth="552.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <Label text="Jenis Kelamin" />
+            <TextField fx:id="tfJenisK" focusTraversable="false" promptText="Masukan Jenis Kelamin" />
+      </VBox>
+
+
+</GridPane>
